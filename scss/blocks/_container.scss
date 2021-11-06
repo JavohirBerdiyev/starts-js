@@ -1,9 +1,44 @@
 /* CONTAINER */
 .container {
   width: 100%;
-  max-width: $width-container;
-  padding-left: $p-container;
-  padding-right: $p-container;
-  margin-left: auto;
-  margin-right: auto;
+  height: 100vh;
+  background-image: linear-gradient(to right, #ff4b4b, #d12280);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feedbackbox {
+  background-color: #fff;
+  padding: 50px 100px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.emoji {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+.emoji img {
+  width: 80px;
+  margin: 0 10px;
+}
+
+#imoji {
+  display: flex;
+  align-items: center;
+  transform: translateX(-400px);
+  transition: 0.3s;
+}
+
+.rating .bx {
+  font-size: 40px;
+  color: #e4e4e4;
+  cursor: pointer;
 }
