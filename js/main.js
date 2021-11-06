@@ -1,14 +1,14 @@
 let stars = document.getElementsByClassName('bx');
 let emoji = document.getElementById("imoji");
-
-  for (let i = 0; i <= 4; i++ ) {
+let count = 4; 
+  for (let i = 0; i <= count; i++ ) {
     stars[i].onclick = function() {
       for(let j = i; j >= 0; j--) {
         stars[j].style.color = "#ffd93b";
         emoji.style.transform = `translateX(-${i * 100}px)`; 
       }
-      for(let j = i; j <= 4; j++) {
-        stars[j+1].style.color = "#e4e4e4";
+      for(let k = i; k <= count-1; k++) {
+        stars[k+1].style.color = "#e4e4e4";
       }
     }
   }
